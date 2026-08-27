@@ -1,0 +1,4 @@
+family,first_suspect_mean,first_bad_mean,detection_proportion_mean,n_events
+drift,12.0,,0.041666666666666664,6
+level_shift,0.0,0.0,0.5972222222222222,6
+stuck,6.0,,0.19444444444444445,6

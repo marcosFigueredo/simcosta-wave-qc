@@ -1,0 +1,41 @@
+# Raw SiMCosta OCEAN CSVs are not redistributed here; fetch them from the
+# SiMCosta portal (https://www.simcosta.furg.br) and place them in this
+# folder before running the pipeline (see README).
+dadosSimcosta/*.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / cloud-sync noise
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Large, fully regenerable intermediate outputs (per-timestamp flag dumps).
+# Re-run the corresponding numbered script in codigos/ to reproduce them;
+# only their small summary/aggregate files are tracked in this repository.
+# (Default-deny the per-variable dumps, then explicitly re-allow the small
+# summary files by name -- a glob like [A-Z]* is unreliable here because git
+# on Windows matches case-insensitively by default with core.ignorecase.)
+resultados_qc_ba1/spike_test_formula_principal/spike_qc_flags_long.csv
+resultados_qc_ba1/base_qc_ready/base_qc_ready_long.csv
+resultados_qc_ba1/spike_test/
+
+resultados_qc_ba1/dixon_4sigma/dixon_4sigma_*.csv
+!resultados_qc_ba1/dixon_4sigma/dixon_4sigma_resumo.csv
+!resultados_qc_ba1/dixon_4sigma/dixon_4sigma_eventos_bad.csv
+!resultados_qc_ba1/dixon_4sigma/dixon_4sigma_top_negativos.csv
+!resultados_qc_ba1/dixon_4sigma/dixon_4sigma_top_positivos.csv
+
+resultados_qc_ba1/q_dixon/q_dixon_*.csv
+!resultados_qc_ba1/q_dixon/q_dixon_resumo.csv
+!resultados_qc_ba1/q_dixon/q_dixon_eventos_bad.csv
+!resultados_qc_ba1/q_dixon/q_dixon_top_negativos.csv
+!resultados_qc_ba1/q_dixon/q_dixon_top_positivos.csv
+!resultados_qc_ba1/q_dixon/q_dixon_por_ano.csv
+!resultados_qc_ba1/q_dixon/q_dixon_por_estacao.csv
+!resultados_qc_ba1/q_dixon/q_dixon_por_mes.csv

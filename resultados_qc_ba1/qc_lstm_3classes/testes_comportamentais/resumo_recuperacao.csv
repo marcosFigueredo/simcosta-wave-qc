@@ -1,0 +1,3 @@
+mode,t_rec_mean,t_rec_median,censor_rate,n_events
+realimentacao_observado,4.0,3.0,0.0,12.0
+substituicao_predicao,0.0,0.0,0.0,12.0

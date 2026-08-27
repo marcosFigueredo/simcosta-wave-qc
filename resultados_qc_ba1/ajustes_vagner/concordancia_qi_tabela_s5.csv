@@ -1,0 +1,8 @@
+,Spike (Classic),Median/MAD,Second Diff.,QARTOD,Rate of Change,Local Std.,Physical Range
+Spike (Classic),100.0,63.1,99.7,47.9,28.6,15.0,0.0
+Median/MAD,8.2,100.0,8.2,58.2,8.1,11.8,0.0
+Second Diff.,99.5,63.1,100.0,48.0,28.5,15.0,0.0
+QARTOD,10.7,100.0,10.8,100.0,8.5,17.7,0.0
+Rate of Change,13.3,29.1,13.3,17.6,100.0,3.3,0.0
+Local Std.,16.1,97.3,16.1,84.6,7.7,100.0,0.0
+Physical Range,0.0,100.0,0.0,100.0,0.0,100.0,100.0

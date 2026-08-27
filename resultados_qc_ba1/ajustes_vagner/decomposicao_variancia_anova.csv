@@ -1,0 +1,10 @@
+metric,mean,sd_total,pct_var_model_seed,pct_var_anomaly_seed,pct_var_remaining_interaction_or_error
+macro_f1,0.7368,0.0347,1.3,86.4,12.4
+f1_good,0.8999,0.0053,18.8,28.5,52.7
+f1_suspect,0.6723,0.0153,3.8,34.5,61.8
+f1_bad,0.6382,0.1015,0.8,93.2,5.9
+binary_f1,0.7544,0.0092,27.3,16.0,56.7
+binary_precision,0.9676,0.0298,8.5,42.4,49.1
+binary_recall,0.6186,0.0126,4.6,68.5,26.9
+auprc_bad,0.6346,0.1555,0.1,98.7,1.2
+auroc_bad,0.923,0.0355,1.1,90.2,8.7

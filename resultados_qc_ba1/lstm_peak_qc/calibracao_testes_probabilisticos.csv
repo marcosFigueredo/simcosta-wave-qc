@@ -1,0 +1,12 @@
+,value
+alpha,0.01
+robust_t_dof,4.0
+gpd_threshold_quantile,0.9
+robust_scale,0.11945860632202196
+gpd_threshold,0.23675044292447672
+gpd_shape,-0.07413560884813264
+gpd_scale,0.08371757409263955
+gpd_p_exceed_threshold,0.10030745580322828
+vae_recon_scale,0.0005047927907527157
+vae_latent_scale,0.000823009992018342
+vae_robust_scale,3.251337526560518

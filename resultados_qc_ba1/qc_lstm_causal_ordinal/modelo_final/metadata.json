@@ -1,0 +1,94 @@
+{
+  "modelo_versao": "qc_lstm_causal_ordinal_v1",
+  "config": "C_causal",
+  "variavel_alvo": "Hsig",
+  "janela_entrada_horas": 24,
+  "variaveis_selecionadas_lstm": [
+    "Hsig",
+    "Avg_Wv_Spread_N",
+    "wind_speed_10m",
+    "wind_gusts_10m",
+    "Tavg",
+    "Tsig"
+  ],
+  "variaveis_auxiliares_ordem": [
+    "Avg_Wv_Spread_N",
+    "wind_speed_10m",
+    "wind_gusts_10m",
+    "Tavg",
+    "Tsig"
+  ],
+  "vetor_features_classificador_ordem": [
+    "Hsig_observado",
+    "Hsig_previsto",
+    "residuo",
+    "residuo_absoluto",
+    "S_acc",
+    "S_level",
+    "S_rate",
+    "S_range",
+    "S_MAD_score",
+    "S_GPD_score",
+    "EWMA_lambda_0.1",
+    "EWMA_lambda_0.3",
+    "EWMA_lambda_0.6",
+    "CUSUM_pos",
+    "CUSUM_neg",
+    "slope_6h",
+    "slope_12h",
+    "slope_24h",
+    "slope_48h",
+    "persistencia_sinal",
+    "aux__Avg_Wv_Spread_N",
+    "aux__wind_speed_10m",
+    "aux__wind_gusts_10m",
+    "aux__Tavg",
+    "aux__Tsig"
+  ],
+  "n_features_classificador": 25,
+  "tau_b": 0.8,
+  "faixa_fisica_min": 0.0,
+  "faixa_fisica_max": 4.71,
+  "faixa_fisica_max_multiplicador": 3.0,
+  "referencia_z_score_media": 0.36139412100456625,
+  "referencia_z_score_desvio": 0.14737515926358913,
+  "ewma_lambdas": [
+    0.1,
+    0.3,
+    0.6
+  ],
+  "slope_janelas_horas": [
+    6,
+    12,
+    24,
+    48
+  ],
+  "cusum_k_fator": 0.5,
+  "cusum_reset_fator": 20.0,
+  "classes": [
+    "GOOD",
+    "SUSPECT",
+    "BAD"
+  ],
+  "classe_para_inteiro": {
+    "GOOD": 0,
+    "SUSPECT": 1,
+    "BAD": 2
+  },
+  "metricas_teste_referencia": {
+    "macro_f1": 0.6496635236853184,
+    "f1_good": 0.9087965461413924,
+    "f1_suspect": 0.7914893617021277,
+    "f1_bad": 0.24870466321243523,
+    "binary_f1": 0.8945726762320648,
+    "balanced_accuracy": 0.7536089651698051,
+    "mcc": 0.6918108427057462,
+    "auprc_good": 0.9155126575806598,
+    "auprc_suspect": 0.8747058083401635,
+    "auprc_bad": 0.11906248925270872,
+    "auroc_good": 0.9480802353713869,
+    "auroc_suspect": 0.8231273287243436,
+    "auroc_bad": 0.8684853729258702
+  },
+  "nota_auprc_bad": "AUPRC de BAD deve ser lido contra o baseline aleatorio, que e a propria prevalencia da classe no teste (tipicamente 2 a 3 por cento aqui), nao contra 1.0. Um AUPRC de ~0.12 com prevalencia de ~2.3 por cento e cerca de 5x o baseline aleatorio, sinal real mas modesto; a varredura completa do grid de tau_B (ver precision_recall_by_tau em codigos/13_qc_lstm_causal_ordinal_ba1.py) mostra que nenhum limiar leva a precisao de BAD muito acima de 0.18, um teto estrutural dado o quanto BAD se sobrepoe a SUSPECT no espaco de features, nao um efeito de escolha de limiar."
+}

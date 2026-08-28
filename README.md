@@ -98,8 +98,7 @@ that only evaluates (`19`, `22`, `24`, `25`) run without repeating the E2 traini
 
 ## Authors and correspondence
 
-Marcos Batista Figueredo (mbfigueredo@uneb.br) and Vagner Fonseca (vagner.fonseca@gmail.com),
-corresponding authors.
+Marcos Batista Figueredo (mbfigueredo@uneb.br), corresponding author.
 
 Full author list: Marcos Batista Figueredo, Jana Ribeiro de Santana, Maria Dolores Ribeiro Orge,
 Vagner Fonseca, Leila Maria Mendes Santos, Lizandra Santos Morais, Leticia Nayara Barreto dos

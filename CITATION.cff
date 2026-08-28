@@ -4,6 +4,10 @@ title: "simcosta-wave-qc: code and trained model for a portable causal ordinal c
 type: software
 license: MIT
 repository-code: "https://github.com/marcosFigueredo/simcosta-wave-qc"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22135590
+    description: "Archived snapshot of this software release on Zenodo"
 authors:
   - family-names: "Figueredo"
     given-names: "Marcos Batista"

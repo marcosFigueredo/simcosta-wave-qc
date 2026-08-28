@@ -8,10 +8,9 @@ SiMCosta buoys, and evaluates it under pooled, leave-one-buoy-out, and streaming
 ## Citation
 
 If you use this code or the released model, please cite the paper (full citation and DOI to be
-added on publication) and, if applicable, this repository's own archival DOI (see badge below
-once minted).
+added on publication) and this repository's archival release.
 
-<!-- [![DOI](https://zenodo.org/badge/DOI/XXXXXXX.svg)](https://doi.org/XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22135590.svg)](https://doi.org/10.5281/zenodo.22135590)
 
 ## Repository structure
 
